@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techweb</title>
+    </head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+    <nav class="w3-bar w3-black" id="nav">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#empresa" class="w3-button w3-bar-item">Empresa</a>
+        <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+        <a href="#contato" class="w3-button w3-bar-item">Contato</a>
+        <a href="http://127.0.0.1:5500/cadastro.html" class="w3-button w3-bar-item">Criar conta</a>
+    </nav>
+    <section>
+        <img class="mySlides" src="_fotos/domenico-loia-hGV2TfOh0ns-unsplash.jpg" style="width:100%;">
+        <img class="mySlides" src="_fotos/kaleidico-26MJGnCM0Wc-unsplash.jpg" style="width:100%;">
+        <img class="mySlides" src="_fotos/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" style="width:100%;">
+    </section>
+
+    <section class="w3-container w3-center w3-content" style="max-width:600px;">
+        <h2 class="w3-wide">TECH WEB</h2>
+        <p class="w3-opacity"><i>Nós amamos café e música</i></p>
+        <p class="w3-justify">Desenvolvimento web é o termo utilizado para descrever o desenvolvimento de sites,
+         na Internet ou numa intranet. Este é o profissional que trabalha desenvolvendo websites, 
+         podendo ser um Web Designer (Desenvolvedor do Layout), ou Web Developer(Desenvolvedor de sistemas). 
+         O desenvolvimento refere-se a um processo de construção e testes do software especifico para a web, 
+         com a finalidade de se obter um conjunto de programas, que satisfazem as funções pretendidas, 
+         quer em termos de usabilidade dos usuários ou compatibilidade com outros programas existentes. 
+         O desenvolvimento web pode variar desde simples páginas estáticas a aplicações ricas, comércios eletrônicos ou redes sociais.</p> 
+    </section>
+
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>Marcos</p>
+            <img src="_fotos/danial-ricaros-FCHlYvR5gJI-unsplash.jpg" alt="Random Name" style="width:100%;">
+            <p>Marcos é um excelente Front-End.</p>
+        </article>
+        <article class="w3-third">
+            <p>Desenvolvedores Web</p>
+            <img src="_fotos/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Random Name" style="width:100%;">   
+            <p>Equipe de Desenvolvedores da TechWeb.</p>
+        </article>
+        <article class="w3-third">
+            <p>Priscila e Catarina</p>
+            <img src="_fotos/kobu-agency-7okkFhxrxNw-unsplash.jpg" alt="Random Name" style="width:100%;">
+            <p>Priscila e Catarina são ótimas desenvolvedoras Front-End.</p>
+        </article>
+    </section>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-center w3-black w3-xlarge">
+        <p class="w3-medium">
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100048568362952"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://twitter.com/RafaelC43759345"><i class="fa fa-twitter"></i></a>
+        <p class="w3-medium">
+         Desenvolvido por <a href="https://www.instagram.com/fael.carvalh0/" target="_blank">Rafael Carvalho</a></p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <a style="font-size: 11pt; text-decoration: none;" t href="#nav"><center>Voltar ao início</center></a>    
+    </footer>
+
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+    </script> 
+</body>
+</html>
